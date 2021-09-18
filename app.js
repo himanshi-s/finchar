@@ -5,8 +5,16 @@ window.setInterval(function(){
   client1.classList.toggle("hide");
   client2.classList.toggle("hide");
 },3000)
-
-
+let hamburger = document.querySelector('.hamburger');
+let nav= document.getElementById('nav');
+function showMenu(){
+  nav.style.left= "0";
+  hamburger.style.display= "none";
+}
+function hideMenu(){
+  nav.style.left= "-250px";
+  hamburger.style.display= "initial";
+}
 
 function animateValue(obj, start, end, duration) {
   let startTimestamp = null;
